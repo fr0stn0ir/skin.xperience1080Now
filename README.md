@@ -1,3 +1,5 @@
+All credit to the OGs. This update is simply to enable addon-support.
+
 ## Xperience1080 for Kodi 21.x (Omega)
 
 ![Xperience1080 Logo](https://raw.githubusercontent.com/xperience1080/skin.xperience1080/master/resources/icon.png)
