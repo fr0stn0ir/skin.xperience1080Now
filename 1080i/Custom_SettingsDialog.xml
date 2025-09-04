@@ -43,6 +43,7 @@
             <control type="grouplist" id="3">
                 <include>SettingsDialogGrouplistVars</include>
                 <visible>String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[31131])</visible>
+                <!-- Existing radiobuttons for toggling categories ...existing code... -->
                 <control type="radiobutton" id="2101">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
@@ -50,6 +51,13 @@
                     <onclick>Skin.ToggleSetting(HomeTV)</onclick>
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[19020]</label>
+                </control>
+                <control type="edit" id="2111">
+                    <width>1210</width>
+                    <height>50</height>
+                    <label>Widget 1 Plugin Path</label>
+                    <text>$INFO[Skin.String(HomeWidget.1.PluginPath)]</text>
+                    <ontextchanged>Skin.SetString(HomeWidget.1.PluginPath,$INFO[Control.GetLabel(2111)])</ontextchanged>
                 </control>
                 <control type="radiobutton" id="2102">
                     <width>1210</width>
@@ -59,6 +67,13 @@
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[342]</label>
                 </control>
+                <control type="edit" id="2112">
+                    <width>1210</width>
+                    <height>50</height>
+                    <label>Widget 2 Plugin Path</label>
+                    <text>$INFO[Skin.String(HomeWidget.2.PluginPath)]</text>
+                    <ontextchanged>Skin.SetString(HomeWidget.2.PluginPath,$INFO[Control.GetLabel(2112)])</ontextchanged>
+                </control>
                 <control type="radiobutton" id="2103">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
@@ -66,6 +81,13 @@
                     <onclick>Skin.ToggleSetting(HomeTVShows)</onclick>
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[31446]</label>
+                </control>
+                <control type="edit" id="2113">
+                    <width>1210</width>
+                    <height>50</height>
+                    <label>Widget 3 Plugin Path</label>
+                    <text>$INFO[Skin.String(HomeWidget.3.PluginPath)]</text>
+                    <ontextchanged>Skin.SetString(HomeWidget.3.PluginPath,$INFO[Control.GetLabel(2113)])</ontextchanged>
                 </control>
                 <control type="radiobutton" id="2104">
                     <width>1210</width>
@@ -75,6 +97,13 @@
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[2]</label>
                 </control>
+                <control type="edit" id="2114">
+                    <width>1210</width>
+                    <height>50</height>
+                    <label>Widget 4 Plugin Path</label>
+                    <text>$INFO[Skin.String(HomeWidget.4.PluginPath)]</text>
+                    <ontextchanged>Skin.SetString(HomeWidget.4.PluginPath,$INFO[Control.GetLabel(2114)])</ontextchanged>
+                </control>
                 <control type="radiobutton" id="2105">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
@@ -83,6 +112,13 @@
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[1]</label>
                 </control>
+                <control type="edit" id="2115">
+                    <width>1210</width>
+                    <height>50</height>
+                    <label>Widget 5 Plugin Path</label>
+                    <text>$INFO[Skin.String(HomeWidget.5.PluginPath)]</text>
+                    <ontextchanged>Skin.SetString(HomeWidget.5.PluginPath,$INFO[Control.GetLabel(2115)])</ontextchanged>
+                </control>
                 <control type="radiobutton" id="2106">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
@@ -90,6 +126,13 @@
                     <onclick>Skin.ToggleSetting(HomePrograms)</onclick>
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[31504]</label>
+                </control>
+                <control type="edit" id="2116">
+                    <width>1210</width>
+                    <height>50</height>
+                    <label>Widget 6 Plugin Path</label>
+                    <text>$INFO[Skin.String(HomeWidget.6.PluginPath)]</text>
+                    <ontextchanged>Skin.SetString(HomeWidget.6.PluginPath,$INFO[Control.GetLabel(2116)])</ontextchanged>
                 </control>
                 <control type="radiobutton" id="2107">
                     <width>1210</width>
