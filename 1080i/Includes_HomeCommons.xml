@@ -28,13 +28,13 @@
     </include>
 
     <include name="HomeWidgetActions">
-        <!-- click triggers select -->
+        <!-- click opens info dialog instead of auto-play -->
         <onclick>SetProperty(ContextMenuOpen,true)</onclick>
         <onclick>SetFocus($PARAM[container])</onclick>
-        <onclick>Select</onclick>
+        <onclick>Action(Info)</onclick>
         <onclick>ClearProperty(ContextMenuOpen)</onclick>
         <onclick>SetFocus($PARAM[button])</onclick>
-        <!-- info triggers context menu -->
+        <!-- info key still triggers context menu -->
         <oninfo>SetProperty(ContextMenuOpen,true)</oninfo>
         <oninfo>SetFocus($PARAM[container])</oninfo>
         <oninfo>ContextMenu</oninfo>
