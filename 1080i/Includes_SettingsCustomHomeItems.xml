@@ -101,35 +101,66 @@
     </variable>
 
     <variable name="HomeTileEditPath">
+        <!-- Prefer PluginPath when set, otherwise show Path -->
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item1) + !String.IsEmpty(Skin.String(HomeVideoTile1.PluginPath))">$INFO[Skin.String(HomeVideoTile1.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item1)">$INFO[Skin.String(HomeVideoTile1.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item2) + !String.IsEmpty(Skin.String(HomeVideoTile2.PluginPath))">$INFO[Skin.String(HomeVideoTile2.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item2)">$INFO[Skin.String(HomeVideoTile2.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item5) + !String.IsEmpty(Skin.String(HomeTVShowTile1.PluginPath))">$INFO[Skin.String(HomeTVShowTile1.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item5)">$INFO[Skin.String(HomeTVShowTile1.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item6) + !String.IsEmpty(Skin.String(HomeTVShowTile2.PluginPath))">$INFO[Skin.String(HomeTVShowTile2.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item6)">$INFO[Skin.String(HomeTVShowTile2.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item7) + !String.IsEmpty(Skin.String(HomeMusicTile1.PluginPath))">$INFO[Skin.String(HomeMusicTile1.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item7)">$INFO[Skin.String(HomeMusicTile1.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item8) + !String.IsEmpty(Skin.String(HomeMusicTile2.PluginPath))">$INFO[Skin.String(HomeMusicTile2.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item8)">$INFO[Skin.String(HomeMusicTile2.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item9) + !String.IsEmpty(Skin.String(HomeProgramTile1.PluginPath))">$INFO[Skin.String(HomeProgramTile1.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item9)">$INFO[Skin.String(HomeProgramTile1.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item10) + !String.IsEmpty(Skin.String(HomeProgramTile2.PluginPath))">$INFO[Skin.String(HomeProgramTile2.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item10)">$INFO[Skin.String(HomeProgramTile2.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item11) + !String.IsEmpty(Skin.String(HomeProgramTile3.PluginPath))">$INFO[Skin.String(HomeProgramTile3.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item11)">$INFO[Skin.String(HomeProgramTile3.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item12) + !String.IsEmpty(Skin.String(HomeProgramTile4.PluginPath))">$INFO[Skin.String(HomeProgramTile4.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item12)">$INFO[Skin.String(HomeProgramTile4.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item13) + !String.IsEmpty(Skin.String(HomeHomeTile1.PluginPath))">$INFO[Skin.String(HomeHomeTile1.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item13)">$INFO[Skin.String(HomeHomeTile1.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item14) + !String.IsEmpty(Skin.String(HomeHomeTile2.PluginPath))">$INFO[Skin.String(HomeHomeTile2.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item14)">$INFO[Skin.String(HomeHomeTile2.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item15) + !String.IsEmpty(Skin.String(HomeVideoTile5.PluginPath))">$INFO[Skin.String(HomeVideoTile5.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item15)">$INFO[Skin.String(HomeVideoTile5.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item16) + !String.IsEmpty(Skin.String(HomeVideoTile6.PluginPath))">$INFO[Skin.String(HomeVideoTile6.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item16)">$INFO[Skin.String(HomeVideoTile6.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item17) + !String.IsEmpty(Skin.String(HomeTVShowTile3.PluginPath))">$INFO[Skin.String(HomeTVShowTile3.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item17)">$INFO[Skin.String(HomeTVShowTile3.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item18) + !String.IsEmpty(Skin.String(HomeTVShowTile4.PluginPath))">$INFO[Skin.String(HomeTVShowTile4.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item18)">$INFO[Skin.String(HomeTVShowTile4.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item19) + !String.IsEmpty(Skin.String(HomeMusicTile3.PluginPath))">$INFO[Skin.String(HomeMusicTile3.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item19)">$INFO[Skin.String(HomeMusicTile3.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item20) + !String.IsEmpty(Skin.String(HomeMusicTile4.PluginPath))">$INFO[Skin.String(HomeMusicTile4.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item20)">$INFO[Skin.String(HomeMusicTile4.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item21) + !String.IsEmpty(Skin.String(HomeProgramTile5.PluginPath))">$INFO[Skin.String(HomeProgramTile5.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item21)">$INFO[Skin.String(HomeProgramTile5.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item22) + !String.IsEmpty(Skin.String(HomeProgramTile6.PluginPath))">$INFO[Skin.String(HomeProgramTile6.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item22)">$INFO[Skin.String(HomeProgramTile6.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item23) + !String.IsEmpty(Skin.String(HomeProgramTile7.PluginPath))">$INFO[Skin.String(HomeProgramTile7.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item23)">$INFO[Skin.String(HomeProgramTile7.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item24) + !String.IsEmpty(Skin.String(HomeProgramTile8.PluginPath))">$INFO[Skin.String(HomeProgramTile8.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item24)">$INFO[Skin.String(HomeProgramTile8.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item25) + !String.IsEmpty(Skin.String(HomeMusicTile5.PluginPath))">$INFO[Skin.String(HomeMusicTile5.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item25)">$INFO[Skin.String(HomeMusicTile5.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item26) + !String.IsEmpty(Skin.String(HomeMusicTile6.PluginPath))">$INFO[Skin.String(HomeMusicTile6.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item26)">$INFO[Skin.String(HomeMusicTile6.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item27) + !String.IsEmpty(Skin.String(HomeProgramTile9.PluginPath))">$INFO[Skin.String(HomeProgramTile9.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item27)">$INFO[Skin.String(HomeProgramTile9.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item28) + !String.IsEmpty(Skin.String(HomeProgramTile10.PluginPath))">$INFO[Skin.String(HomeProgramTile10.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item28)">$INFO[Skin.String(HomeProgramTile10.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item39) + !String.IsEmpty(Skin.String(HomePicturesTile1.PluginPath))">$INFO[Skin.String(HomePicturesTile1.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item39)">$INFO[Skin.String(HomePicturesTile1.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item40) + !String.IsEmpty(Skin.String(HomePicturesTile2.PluginPath))">$INFO[Skin.String(HomePicturesTile2.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item40)">$INFO[Skin.String(HomePicturesTile2.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item41) + !String.IsEmpty(Skin.String(HomePicturesTile3.PluginPath))">$INFO[Skin.String(HomePicturesTile3.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item41)">$INFO[Skin.String(HomePicturesTile3.Path)]</value>
+        <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item42) + !String.IsEmpty(Skin.String(HomePicturesTile4.PluginPath))">$INFO[Skin.String(HomePicturesTile4.PluginPath)]</value>
         <value condition="String.IsEqual(Window(3003).Property(SingleDialog),item42)">$INFO[Skin.String(HomePicturesTile4.Path)]</value>
     </variable>
 
@@ -176,6 +207,25 @@
                 <onclick condition="!String.IsEmpty(Window.Property(HomeTileEdit.Animate))">Skin.Reset($INFO[Window.Property(HomeTileEdit)].Animate)</onclick>
                 <onclick condition="!String.IsEmpty(Window.Property(HomeTileEdit.Animate))">ClearProperty(HomeTileEdit.Animate)</onclick>
                 <selected>!String.IsEmpty(Window.Property(HomeTileEdit.Animate))</selected>
+            </control>
+            <!-- Custom Plugin Path (browse addons) -->
+            <control type="button" id="2407">
+                <include>SettingsCustomDialogButtonVars</include>
+                <label>$LOCALIZE[31183]</label>
+                <!-- audio roots: if tile is music or type suggests audio/music playlist -->
+                <onclick condition="String.StartsWith(Window.Property(HomeTileEdit),HomeMusicTile) | String.IsEqual(Window.Property(HomeTileEdit.Type),1) | String.IsEqual(Window.Property(HomeTileEdit.Type),5)">SetPath($INFO[Window.Property(HomeTileEdit)].PluginPath,addons://sources/audio/)</onclick>
+                <!-- image roots: if tile is pictures or type suggests image -->
+                <onclick condition="String.StartsWith(Window.Property(HomeTileEdit),HomePicturesTile) | String.IsEqual(Window.Property(HomeTileEdit.Type),2) | String.IsEqual(Window.Property(HomeTileEdit.Type),8)">SetPath($INFO[Window.Property(HomeTileEdit)].PluginPath,addons://sources/image/)</onclick>
+                <!-- program roots: if explicitly set to program/executable -->
+                <onclick condition="String.StartsWith(Window.Property(HomeTileEdit),HomeProgramTile) | String.IsEqual(Window.Property(HomeTileEdit.Type),3)">SetPath($INFO[Window.Property(HomeTileEdit)].PluginPath,addons://sources/executable/)</onclick>
+                <!-- default to video roots for all others (home/video/tvshow tiles) -->
+                <onclick>SetPath($INFO[Window.Property(HomeTileEdit)].PluginPath,addons://sources/video/)</onclick>
+            </control>
+            <!-- Clear Plugin Path -->
+            <control type="button" id="2408">
+                <include>SettingsCustomDialogButtonVars</include>
+                <label>$LOCALIZE[31184]</label>
+                <onclick>Skin.Reset($INFO[Window.Property(HomeTileEdit)].PluginPath)</onclick>
             </control>
         </control>
 
@@ -1157,6 +1207,7 @@
                         <onfocus>Skin.Reset($INFO[Window.Property(HomeTileEdit)].Animate)</onfocus>
                         <onfocus>Skin.Reset($INFO[Window.Property(HomeTileEdit)].ShowLabel)</onfocus>
                         <onfocus>Skin.Reset($INFO[Window.Property(HomeTileEdit)].Path)</onfocus>
+                        <onfocus>Skin.Reset($INFO[Window.Property(HomeTileEdit)].PluginPath)</onfocus>
                         <onfocus>SetFocus(6)</onfocus>
                         <visible allowhiddenfocus="true">false</visible>
                     </control>
